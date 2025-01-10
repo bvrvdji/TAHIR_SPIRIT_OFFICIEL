@@ -1,3 +1,6 @@
-document.getElementById("hamburger-icon").addEventListener("click", function () {
-    document.querySelector("nav ul").classList.toggle("active");
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
 });
