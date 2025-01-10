@@ -1,0 +1,172 @@
+/* Le CSS reste globalement similaire, ajoute ces parties pour le hamburger */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url(md.png) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(13, 30, 76, 0.7);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    opacity: 90%;
+}
+
+header .logo img {
+    width: 90px;
+    border-radius: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    padding: 8px 15px;
+    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #0a7075;
+    border-radius: 30px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        width: 100%;
+        background-color: rgba(13, 30, 76, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.hero_un {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+}
+.titre {
+    text-decoration: underline;
+    font-style: oblique;
+}
+
+.un {
+    background-color: #fda481;
+    padding-top: 50px;
+    color: ;
+}
+
+.hero .block {
+    background: #29104A;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 300px;
+    height: 665px;
+    padding: 20px;
+    text-align: center;
+    color: #e0d4d4;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 90%;
+}
+
+.hero .block:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.titre {
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.hero .block:nth-child(1) {
+    background-color: #181A2F; 
+    color: whitesmoke;
+}
+
+.hero .block:nth-child(2) {
+    background-color: #37415C; 
+    color: whitesmoke;
+}
+
+.hero .block:nth-child(3) {
+    background-color: #242E49; 
+    color: whitesmoke;
+}
+
+.hero .block:nth-child(4) {
+    background-color: #413B61; 
+    color: whitesmoke;
+}
+
+.hero .block:nth-child(5) {
+    background-color: #03122F; 
+    color: whitesmoke;
+}
+
+.hero .block:nth-child(6) {
+    background-color: #19305C;
+    color:whitesmoke;
+}

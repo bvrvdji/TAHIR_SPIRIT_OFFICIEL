@@ -1,0 +1,180 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url('md.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(13, 30, 76, 0.7);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    opacity: 90%;
+}
+
+header .logo img {
+    width: 90px;
+    border-radius: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    padding: 8px 15px;
+    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #0a7075;
+    border-radius: 30px;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    background-color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        width: 100%;
+        background-color: rgba(13, 30, 76, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-block {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.info-block_mail {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.mail{
+    color: #0a7075;
+    font-size: 1.5rem;
+}
+.info-block_mail h2{
+    color: #0a7075;
+    font-size: 1.5rem;
+}
+.info-block h2{
+    color: #0a7075;
+    font-size: 1.5rem;
+}
+ .email{
+    font-size: 0.8rem;
+    display: flex;
+
+}
+.info-block h3 {
+    font-size: 1.2rem;
+    display: flex;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(13, 30, 76, 0.7);
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.menu.active {
+    display: block;
+}
