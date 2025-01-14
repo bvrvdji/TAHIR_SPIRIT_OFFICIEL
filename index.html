@@ -50,7 +50,14 @@
             <a href="#" aria-label="Twitter">Twitter</a>
         </div>
     </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
 
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+});
+    </script>
     <script src="app.js"></script>
 </body>
 </html>

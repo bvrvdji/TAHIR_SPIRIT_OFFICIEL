@@ -29,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background: rgba(13, 30, 76, 0.95);
+    background: #0A1638;
     color: #fff;
     position: sticky;
     top: 0;
@@ -64,6 +64,9 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 25px;
+}
+span.hamburger:hover {
+    transform: rotate(90deg);
 }
 
 nav ul li a {
@@ -101,13 +104,14 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     min-height: 75vh;
-    background: rgba(131, 166, 206, 0.9);
+    background-color:#182d68;
     color: #fff;
     padding: 50px 30px;
     border-radius: 20px;
     margin: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1.5s ease-in-out;
+
 }
 .hero_un {
     display: flex;
@@ -125,15 +129,26 @@ nav ul li a:hover {
     animation: fadeIn 1.5s ease-in-out;
 
 }
+
 .hero_un h1 {
-    font-size: 3.5rem;
-    margin-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
     color: #0a7075;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
 }
 .hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
     color: #0a7075;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero .btn {
@@ -151,7 +166,10 @@ nav ul li a:hover {
     background: #0a7075;
     transform: scale(1.1);
 }
-
+.hero_un{
+    background-color: #0A1638;
+    opacity: 90%;
+}
 
 section {
     padding: 70px 40px;

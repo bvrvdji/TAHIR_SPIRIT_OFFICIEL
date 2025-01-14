@@ -154,7 +154,27 @@ span.hamburger:hover {
     font-weight: 900;
     margin-bottom: 15px;
 }
+footer {
+    padding: 25px 0;
+    background: #1b1931;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 40px 40px 0 0;
+    opacity: 0.95;
+}
 
+footer .social-links a {
+    color: #0a7075;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
 
 @media (max-width: 768px) {
     nav ul {
